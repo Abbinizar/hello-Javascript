@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Percabangan</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//if
+		var totalBelanja = prompt("total belanja ?", 0);
+		if (totalBelanja > 10000) {
+			document.write("selamat anda dapat bonus diskon <br/>")	
+		}
+		document.write("terimakasih sudah berbelanja")
+		//if else
+		var password = prompt("password")
+		if (password == "kopi") {
+			document.write("welcome")
+		} else{
+			document.write("cobalagi")
+		}
+		//if else if
+		var nilai = prompt("input nilai :");
+		var grade = "";
+
+		if (nilai >= 90) {
+			grade = "A"
+		} 
+		else if (nilai >= 80) {
+			grade = "B"
+		}
+		else if (nilai >= 70) {
+			grade = "C"
+		}
+		else if (nilai >= 60) {
+			grade = "D"
+		}
+		else{
+			grade = "F"
+		}
+		document.write(`<p>grade anda: ${grade}</p>`)
+
+		//switch
+		var jawab = prompt("silahkan pilih hadiah dengan input angka 1 - 5")
+		var hasil = "";
+
+		switch(jawab){
+			case "1":
+			hadiah = "tisu";
+			break;
+			case "2":
+			hadiah = "tas";
+			break;
+			case "3":
+			hadiah = "buku";
+			break;
+			case "4":
+			hadiah = "motor";
+			break;
+			case "5":
+			hadiah = "mobil";
+			break;
+			default:
+			document.write("anda salah pilih")
+		}
+		if (hadiah === "") {
+			document.write("gagal")
+		} else{
+			document.write("selamat kamu dapat"+hadiah)
+		}
+
+		//operator ternary
+		var jwb = prompt("apakah ibukota indonesia jakarta?");
+		var jawaban = (jwb.toUpperCase()=="IYA") ? "benar": "salah";
+		document.write(`jawaban anda : ${jawaban}`);
+
+		//if bersarang (nested)
+		var username = prompt("masukkan username : ")
+		var password = prompt("masukkan password : ")
+		if (username == "admin") {
+			if (password == "super") {
+				document.write("selamat datang di admin page")
+			} else {
+				document.write("gagal login, coba lagi")
+			}
+		} else{
+			document.write("akun tidak terdaftar")
+		}
+
+		//nested menggunakn logika
+		var username = prompt("masukkan username lu: ")
+		var password = prompt("masukkan password lu: ")
+		if (username == "adi" && password == "jaya") {
+			document.write("masuk")
+		}else{
+			document.write("gagal")
+		}
+	</script>
+</body>
+</html>

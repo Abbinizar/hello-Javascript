@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operation</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 5;
+		var b = 10;
+		var c = 0;
+
+		//pengurangan 
+		c = b - a;
+		document.write(`${a}-${b} = ${c} <br/>`)
+		//penumlahan
+		c = b + a;
+		document.write(`${a}+${b} = ${c} <br/>`)
+		//perkalian
+		c = b * a;
+		document.write(`${a}*${b} = ${c} <br/>`)
+		//pembagian
+		c = b / a;
+		document.write(`${a}/${b} = ${c} <br/>`)
+		//modulo
+		c = b % a;
+		document.write(`${a}%${b} = ${c} <br/>`)
+		//pankat
+		c = b ** a
+		document.write(`${a}**${b} = ${c} <br/>`)
+		//penggabungan string
+		var d = "10" + "5"
+		document.write(`d <br/>`)
+
+		document.write(	"nilai skore <br>")
+		var score = 100;
+		document.write("score = "+score+"<br/>")
+		score += 5;
+		document.write("score = "+score+"<br/>")
+		score -= 5;
+		document.write("score = "+score+"<br/>")
+		score *= 5;
+		document.write("score = "+score+"<br/>")
+		score /= 5;
+		document.write("score = "+score+"<br/>")
+		score %= 5;
+		document.write("score = "+score+"<br/>")
+		score **= 2;
+		document.write("score = "+score+"<br/>")
+
+		var aku = 20;
+		var kamu = 15;
+		var hasil = 0;
+		//sama dengan
+		hasil = aku == kamu;
+		document.write(`${aku}==${kamu}=${hasil} <br/>`)
+		//membandingkan tipe data juga
+		hasil = aku === kamu;
+		document.write(`${aku}===${kamu}=${hasil} <br/>`)
+		//lebih besar
+		hasil = aku > kamu;
+		document.write(`${aku}>${kamu}=${hasil} <br/>`)
+		//lebih kecil
+		hasil = aku < kamu;
+		document.write(`${aku}<${kamu}=${hasil} <br/>`)
+		//lebih kecil sama dengan
+		hasil = aku <= kamu;
+		document.write(`${aku}<=${kamu}=${hasil} <br/>`)
+		//lebih besar sama dengan
+		hasil = aku >= kamu;
+		document.write(`${aku}>=${kamu}=${hasil} <br/>`)
+		//tidak sama dengan
+		hasil = aku != kamu;
+		document.write(`${aku}!=${kamu}=${hasil} <br/>`)
+
+		var benar = aku > kamu;
+		var salah = aku < kamu;
+		//and
+		hasil = benar && salah
+		document.write(`${benar}&&${salah}=${hasil} <br/>`)
+		//or
+		hasil = benar || salah
+		document.write(`${benar}||${salah}=${hasil} <br/>`)
+		//not
+		// hasil = benar ! salah
+		// document.write(`${benar}!${salah}=${hasil} <br/>`)
+
+		//bitwise
+		var x = 4;
+		var y = 3;
+		//bitwise and
+		var hasil = x & y;
+		document.write(`${x}&${y} = ${hasil} <br/>`)
+		//bitwise or
+		var hasil = x | y;
+		document.write(`${x}|${y} = ${hasil} <br/>`)
+		//bitwise xor
+		var hasil = x ^ y;
+		document.write(`${x}^${y} = ${hasil} <br/>`)
+		//operator negasi
+		var hasil = ~x;
+		document.write(`~${x} = ${hasil} <br/>`)
+		//right shif
+		var hasil = x >> y;
+		document.write(`${x}>>${y} = ${hasil} <br/>`)
+		//right shif <<
+		var hasil = x & y;
+		document.write(`${x}<<${y} = ${hasil} <br/>`)
+		//unsigned
+		var hasil = x >>> y;
+		document.write(`${x}>>>${y} = ${hasil} <br/>`)
+
+		//operation tenary
+		var pertanyaan = confirm("apakah sudah siap?")
+		var hasil = pertanyaan ? "oke lanjut" : "siapin dulu";
+		document.write(hasil);
+	</script>
+
+</body>
+</html>
