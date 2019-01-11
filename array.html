@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var product = ["motor", 1, 0.3, "mobil"]
+		//menambah isi dengna push
+		product.push("tv");
+		//mencetak arrayd dengan perulangan
+		for (let i = 0; i < product.length; i++) {
+			document.write(`<li>${product[i]}</li>`);
+		}
+		//menggunakan foreach
+		product.forEach((data) =>{
+			document.write(`<li>${data}</li>`);
+		});
+		//menghapus data dari belakang pop (lilo)
+		product.pop();
+		//menghapus data dari depan shift 
+		product.shift();
+		//menghapus indeks tertentu splice(<indeks><total>)
+		product.splice(2, 1);
+		//mengganti isi array
+		product[2]="sepeda";
+		//filter data
+		const item = [1,2,3,4,5,6,7,8,9]
+		const filterArray = item.filter((angka) =>{return angka % 2 === 0});
+		document.write(filterArray)
+		//mengeceek data
+		var tanaman = ["padi", "kacang", "tebu", "sawi"]
+		var adaPadi = tanaman.includes("padi");
+		document.write(adaPadi);
+		var adaSapi = tanaman.includes("sapi");
+		document.write(adaSapi);
+		//sort
+		var alphabet = ["f" , "b", "c", "d"]
+		var number = [1,2,7,4,5]
+		document.write(alphabet.sort())
+		document.write(number.sort())
+ 	</script>
+
+</body>
+</html>
