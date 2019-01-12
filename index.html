@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Belajar java script</title>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript" >
 		console.log("hello-javascript")
 		console.log(typeof name)
 		console.log(typeof visitorCount)
@@ -15,12 +15,22 @@
 		document.write("nama :"+name)
 		document.write("visitor :"+visitorCount)
 		document.write("url :"+url+ "<br>")
-	</script>
+	</script> -->
 </head>
 <body>
-	<button onclick="alert('terimakasih') "> klik me</button><br>
+	<script type="text/javascript" src="javascript.js"></script>
+	<fieldset>
+		<legend>Input nama</legend>
+		<input type="text" name="barang"/>
+		<input type="button" onclick="addBarang()" value="tambah"/>
+		<div>
+			<ul id="list-barang">
+			</ul>
+		</div>
+	</fieldset>
+	<!-- <button onclick="alert('terimakasih') "> klik me</button><br>
 	<script type="text/javascript">
 		document.write("hai javascript"+ "<br>")
-	</script>
+	</script> -->
 </body>
 </html>
